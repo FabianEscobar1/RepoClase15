@@ -1,0 +1,37 @@
+.navbar-light {
+    background-color: linear-gradient(rgba(199, 20, 20, 0.55));
+    list-style-type:square;
+    font-size: 20px;
+    padding-bottom: 0%;
+    list-style: none;
+    text-align: center;
+    .lista {
+        margin-right: 45%;
+    }
+    .navbar-nav {
+        .me-auto {
+            margin-right: 0;
+        }
+        li{
+            display:inline;
+            padding-left:10px;
+            padding-right:10px;
+            display: inline-block;
+            text-align: center;
+            font-size: 30px;
+            .nav-link {
+                        margin-bottom: 0%;
+                        color: purple;
+                    text-decoration: none;
+                    &:hover {
+                        color: rgb(238, 127, 145);
+                    }
+                    }
+                
+            
+        }
+    }
+}
+.logo__index{
+    border-radius: 30px;
+}

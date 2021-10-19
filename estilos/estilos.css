@@ -1,0 +1,207 @@
+/*General*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(234, 137, 154);
+    background-image: linear-gradient(to right, pink, purple);
+    color: rgb(171, 240, 160);
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+h1{
+    color: pink;
+    font-size: 30px;
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    color: pink;
+    font-size: 30px;
+}
+
+footer{
+    font-size: 25px;
+    margin: 20px;
+    padding: auto;
+    text-align: center;
+}
+
+.parrafo{
+    font-size: 30px;
+    text-align: center;
+    color: purple;
+    margin: 20px;
+    padding: 20px;
+}
+
+ul, p{
+    color: white;
+    list-style-type:square;
+    font-size: 20px;
+}
+
+li{
+    display:inline;
+    padding-left:10px;
+    padding-right:10px;
+}
+
+ul {
+    padding: 13%;
+    padding-bottom: 0%;
+    list-style: none;
+    text-align: center;
+    background-image: url(../imagenes/logoheader.png);
+}
+
+.pastelera{
+    grid-area: imagen;
+    align-self: center;
+    justify-self: center;
+}
+
+.lista{
+    display: inline-block;
+    width: 15%;
+    text-align: center;
+    font-size: 30px;
+    color: purple;
+}
+
+ul li a:hover {
+    color: purple;
+    padding: 4px;
+}
+
+#logo{
+    position: center;
+    margin: auto;
+    padding: 45%;
+}
+
+.titulosPagina{
+   font-size: 25px;
+   text-align: center;
+   border: 10px;
+   padding: 8px;
+   grid-area: titulo;
+}
+
+/*galeria*/ 
+
+.galeria-contenedor{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px;
+    grid-gap: 10px;
+}
+
+.galeria__img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.galeria__item:nth-child(7) {
+    grid-column-start: span 2;
+}
+
+.galeria__item:nth-child(2) {
+    grid-column-start: span 2;
+}
+
+.galeria__item{
+    transform: rotate(1deg);
+}
+
+/*index*/
+
+.listaTortas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    grid-area: lista;
+}
+
+.carousel-item{
+    height: 100%;
+    width: 100% ;
+    padding: 3%;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+.imagene{
+    background-color: rgb(234, 137, 154);
+    align-items: space-between;
+    margin: 2rem;
+    padding: 2rem;
+    border: 2px solid rgb(163, 73, 164);
+}    
+
+.contenedorIndex{
+    width: 90%;
+    max-width: 1000px;
+    border: 10px solid purple;
+    margin: auto;
+    margin-bottom: 40px;
+    font-size: 50px;
+    line-height: 50px;
+    text-align: center;
+    display: grid;
+    grid-template-areas: "titulo titulo"
+                        "parrafo imagen";       
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.contenedorIndex , .parrafo , .localesCom{
+    display: block;
+    padding: 0px;
+    color: rgb(99, 4, 99);
+}
+
+/* media Queries*/ 
+
+@media screen and (max-width: 768px){ 
+    .pastelera{
+        display: none;
+    }
+    .contenedorIndex { 
+    grid-template-areas: "titulo"
+                        "parrafo";
+    grid-template-columns: 1fr;
+    }
+
+    .imagene , .localesCom{
+        align-items: center;
+        margin: 0%;
+        padding: 0%;
+    }
+
+    .lista {
+    display: block;
+    }
+    ul {
+        align-items: center;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 778px) {
+    .parrafo{
+        font-size: 15px;
+    }
+    .contenedorIndex {
+        line-height: 20px;
+    }
+}
+
+/*Nosotros*/
+

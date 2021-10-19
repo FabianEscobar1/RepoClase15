@@ -1,0 +1,31 @@
+/* footer */
+.footer-style {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding-top: 30px;
+  background-color: #740c62;
+}
+
+footer {
+  color: white;
+}
+
+footer h5 {
+  margin-bottom: 30px;
+  font-weight: 800;
+}
+
+footer .footer-above {
+  padding-top: 50px;
+  background-color: #661530;
+}
+
+footer .footer-col {
+  margin-bottom: 25px;
+}
+
+footer .footer-below {
+  padding: 25px;
+  padding-top: 25px;
+  background-color: red;
+}
+/*# sourceMappingURL=footer.css.map */

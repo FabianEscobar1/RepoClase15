@@ -1,0 +1,40 @@
+.navbar-light {
+  background-color: linear-gradient(rgba(199, 20, 20, 0.55));
+  list-style-type: square;
+  font-size: 20px;
+  padding-bottom: 0%;
+  list-style: none;
+  text-align: center;
+}
+
+.navbar-light .lista {
+  margin-right: 45%;
+}
+
+.navbar-light .navbar-nav .me-auto {
+  margin-right: 0;
+}
+
+.navbar-light .navbar-nav li {
+  display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+  display: inline-block;
+  text-align: center;
+  font-size: 30px;
+}
+
+.navbar-light .navbar-nav li .nav-link {
+  margin-bottom: 0%;
+  color: purple;
+  text-decoration: none;
+}
+
+.navbar-light .navbar-nav li .nav-link:hover {
+  color: #ee7f91;
+}
+
+.logo__index {
+  border-radius: 30px;
+}
+/*# sourceMappingURL=navbar.css.map */
