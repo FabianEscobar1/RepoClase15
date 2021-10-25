@@ -73,6 +73,8 @@ footer .footer-below {
   margin-top: 2.5rem;
   font-size: 20px;
   text-align: center;
+  -o-object-fit: contain;
+     object-fit: contain;
   margin-left: 2rem;
   margin-right: 2rem;
   color: #802680;
@@ -103,7 +105,6 @@ footer .footer-below {
   border-radius: 30%;
   display: block;
   margin: 0 auto;
-  max-width: 50%;
   width: 80%;
 }
 
@@ -120,9 +121,10 @@ footer .footer-below {
 }
 
 body {
+  line-height: 1;
   min-height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(184, 140, 167, 0.55))), url(../imagenes/background.jpg);
-  background-image: linear-gradient(rgba(184, 140, 167, 0.55)), url(../imagenes/background.jpg);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(80, 61, 73, 0.55))), url(../imagenes/background.jpg);
+  background-image: linear-gradient(rgba(80, 61, 73, 0.55)), url(../imagenes/background.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-attachment: fixed;
@@ -131,7 +133,8 @@ body {
 
 @media screen and (max-width: 700px) {
   .contenedor__text {
-    font-size: 20px;
+    font-size: 1.5em;
+    margin-left: 0rem;
   }
 }
 
@@ -166,6 +169,7 @@ body {
 }
 
 .filter-nav {
+  text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -204,7 +208,7 @@ body {
 }
 
 .galeria__parrafo {
-  font-size: 4vw;
+  font-size: 30px;
   color: rebeccapurple;
   text-align: center;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
