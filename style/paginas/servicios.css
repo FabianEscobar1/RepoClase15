@@ -5,6 +5,10 @@
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.filter-gallery {
+  padding-bottom: 30px;
+}
+
 .btn-success.active {
   color: rebeccapurple;
   background-color: pink;
@@ -12,8 +16,27 @@
 }
 
 .btn-primary {
-  color: rebeccapurple;
-  background-color: pink;
-  border-color: rebeccapurple;
+  background-color: pink !important;
+  border-color: pink !important;
+  color: rebeccapurple !important;
+}
+
+.btn-success.active:hover {
+  color: #f52de4 !important;
+  -webkit-box-shadow: 0 4px 16px #f85bd1;
+          box-shadow: 0 4px 16px #f85bd1;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border-color: pink !important;
+}
+
+.btn:hover {
+  color: #f52de4 !important;
+  background-color: pink !important;
+  border-color: pink !important;
+  -webkit-box-shadow: 0 4px 16px #f85bd1;
+          box-shadow: 0 4px 16px #f85bd1;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 /*# sourceMappingURL=servicios.css.map */

@@ -1,5 +1,5 @@
 .navbar-light {
-  background-color: linear-gradient(rgba(199, 20, 20, 0.55));
+  background-color: white;
   list-style-type: square;
   font-size: 20px;
   padding-bottom: 0%;
@@ -42,15 +42,15 @@
 .footer-style {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   padding-top: 30px;
-  background-color: #740c62;
+  background-color: white;
 }
 
 footer {
-  color: white;
+  color: #740c62;
 }
 
 footer h5 {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-weight: 800;
 }
 
@@ -66,7 +66,14 @@ footer .footer-col {
 footer .footer-below {
   padding: 25px;
   padding-top: 25px;
-  background-color: red;
+}
+
+@media screen and (max-width: 700px) {
+  .footer-style {
+    font-size: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }
 
 .contenedor {
@@ -77,7 +84,7 @@ footer .footer-below {
      object-fit: contain;
   margin-left: 2rem;
   margin-right: 2rem;
-  color: #802680;
+  color: #c73ec7;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -86,7 +93,7 @@ footer .footer-below {
   font-size: 40px;
   margin-bottom: 30px;
   font-weight: bold;
-  color: #802680;
+  color: #c73ec7;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -96,7 +103,7 @@ footer .footer-below {
   font-size: 25px;
   border-left: 5px;
   padding-left: 2rem;
-  color: #802680;
+  color: #c73ec7 !important;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -105,7 +112,8 @@ footer .footer-below {
   border-radius: 30%;
   display: block;
   margin: 0 auto;
-  width: 80%;
+  width: 60%;
+  height: 60%;
 }
 
 .contenedor .titulosPagina {
@@ -118,6 +126,11 @@ footer .footer-below {
   margin-top: 3rem;
   font-size: 25px;
   color: #802680;
+}
+
+.carousel-inner {
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
 
 body {
@@ -133,7 +146,14 @@ body {
 
 @media screen and (max-width: 700px) {
   .contenedor__text {
-    font-size: 1.5em;
+    font-size: 1.5rem;
+    margin-left: 0rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .contenedor .listaTortas {
+    font-size: 1.5rem;
     margin-left: 0rem;
   }
 }
@@ -150,6 +170,7 @@ body {
 }
 
 .contenedor__text {
+  text-align: center;
   margin-left: 2rem;
   margin-right: 2rem;
   color: purple;
@@ -157,14 +178,15 @@ body {
 }
 
 .contenedor .listaTortas {
-  padding-top: 5%;
+  display: inline-block;
+  background-color: #eec0c6;
   font-size: 20px;
-  color: rebeccapurple;
+  color: purple;
 }
 
 @media screen and (max-width: 700px) {
   .contenedor__text {
-    font-size: 20px;
+    font-size: 1.2rem;
   }
 }
 
@@ -175,6 +197,10 @@ body {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
+.filter-gallery {
+  padding-bottom: 30px;
+}
+
 .btn-success.active {
   color: rebeccapurple;
   background-color: pink;
@@ -182,9 +208,28 @@ body {
 }
 
 .btn-primary {
-  color: rebeccapurple;
-  background-color: pink;
-  border-color: rebeccapurple;
+  background-color: pink !important;
+  border-color: pink !important;
+  color: rebeccapurple !important;
+}
+
+.btn-success.active:hover {
+  color: #f52de4 !important;
+  -webkit-box-shadow: 0 4px 16px #f85bd1;
+          box-shadow: 0 4px 16px #f85bd1;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  border-color: pink !important;
+}
+
+.btn:hover {
+  color: #f52de4 !important;
+  background-color: pink !important;
+  border-color: pink !important;
+  -webkit-box-shadow: 0 4px 16px #f85bd1;
+          box-shadow: 0 4px 16px #f85bd1;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 #galeria .col-lg-4 {
@@ -223,6 +268,19 @@ legend {
   margin-top: 25px;
 }
 
+.fieldset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100vh;
+}
+
 input {
   border: solid;
   border-color: purple;
@@ -231,7 +289,7 @@ input {
 
 .contenedor-responsive {
   position: relative;
-  padding-bottom: 56.25%;
+  padding-bottom: 36.25%;
   padding-top: 30px;
   height: 0;
   overflow: hidden;
@@ -241,9 +299,13 @@ input {
 .contenedor-responsive object,
 .contenedor-responsive embed {
   position: absolute;
-  top: 0;
+  top: 25px;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 80%;
+}
+
+.col-md-12 {
+  margin-bottom: 0px;
 }
 /*# sourceMappingURL=main.css.map */

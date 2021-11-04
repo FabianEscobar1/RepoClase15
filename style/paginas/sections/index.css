@@ -6,7 +6,7 @@
      object-fit: contain;
   margin-left: 2rem;
   margin-right: 2rem;
-  color: #802680;
+  color: #c73ec7;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -15,7 +15,7 @@
   font-size: 40px;
   margin-bottom: 30px;
   font-weight: bold;
-  color: #802680;
+  color: #c73ec7;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -25,7 +25,7 @@
   font-size: 25px;
   border-left: 5px;
   padding-left: 2rem;
-  color: #802680;
+  color: #c73ec7 !important;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
@@ -34,7 +34,8 @@
   border-radius: 30%;
   display: block;
   margin: 0 auto;
-  width: 80%;
+  width: 60%;
+  height: 60%;
 }
 
 .contenedor .titulosPagina {
@@ -47,6 +48,11 @@
   margin-top: 3rem;
   font-size: 25px;
   color: #802680;
+}
+
+.carousel-inner {
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
 
 body {
@@ -62,7 +68,14 @@ body {
 
 @media screen and (max-width: 700px) {
   .contenedor__text {
-    font-size: 1.5em;
+    font-size: 1.5rem;
+    margin-left: 0rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .contenedor .listaTortas {
+    font-size: 1.5rem;
     margin-left: 0rem;
   }
 }

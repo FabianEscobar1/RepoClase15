@@ -10,6 +10,7 @@
 }
 
 .contenedor__text {
+  text-align: center;
   margin-left: 2rem;
   margin-right: 2rem;
   color: purple;
@@ -17,14 +18,15 @@
 }
 
 .contenedor .listaTortas {
-  padding-top: 5%;
+  display: inline-block;
+  background-color: #eec0c6;
   font-size: 20px;
-  color: rebeccapurple;
+  color: purple;
 }
 
 @media screen and (max-width: 700px) {
   .contenedor__text {
-    font-size: 20px;
+    font-size: 1.2rem;
   }
 }
 /*# sourceMappingURL=nosotros.css.map */

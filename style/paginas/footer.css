@@ -2,15 +2,15 @@
 .footer-style {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   padding-top: 30px;
-  background-color: #740c62;
+  background-color: white;
 }
 
 footer {
-  color: white;
+  color: #740c62;
 }
 
 footer h5 {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   font-weight: 800;
 }
 
@@ -26,6 +26,13 @@ footer .footer-col {
 footer .footer-below {
   padding: 25px;
   padding-top: 25px;
-  background-color: red;
+}
+
+@media screen and (max-width: 700px) {
+  .footer-style {
+    font-size: 12px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }
 /*# sourceMappingURL=footer.css.map */

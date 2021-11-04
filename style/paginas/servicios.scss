@@ -4,13 +4,33 @@
     margin-bottom: 50px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+.filter-gallery{
+    padding-bottom: 30px;
+}
+
 .btn-success.active{
     color: rebeccapurple;
     background-color: pink;
     border-color: rebeccapurple;
 }
 .btn-primary{
-    color: rebeccapurple;
-    background-color: pink;
-    border-color:rebeccapurple;
+    background-color: pink !important; 
+    border-color: pink !important;
+    color: rebeccapurple !important;
+}
+
+.btn-success.active:hover {
+    color: rgb(245, 45, 228) !important;
+    box-shadow: 0 4px 16px rgb(248, 91, 209);
+    transition: all 0.2s ease;
+    border-color: pink !important;
+}
+
+.btn:hover{
+    color: rgb(245, 45, 228) !important;
+    background-color: pink !important;
+    border-color: pink !important;
+    box-shadow: 0 4px 16px rgb(248, 91, 209);
+    transition: all 0.2s ease;
 }
