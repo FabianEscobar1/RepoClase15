@@ -22,6 +22,7 @@
   background-color: #eec0c6;
   font-size: 20px;
   color: purple;
+  list-style-type: none;
 }
 
 @media screen and (max-width: 700px) {

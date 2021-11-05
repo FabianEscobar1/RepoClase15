@@ -11,8 +11,7 @@
         font-weight: bold;
         font-size: 40px;
         margin-bottom: 30px;
-        font-weight: bold;
-        color: rgb(199, 62, 199);
+        color: rgb(199, 62, 199) !important;
         font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     }
     &__text{
@@ -41,6 +40,7 @@
         margin-top: 3rem;
         font-size: 25px;
         color: rgb(128, 38, 128);
+        list-style-type: none;
     }
 }
 
